@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+<script>
+    let txt=parseInt(prompt("Nhập số muốn tính giai thừa :"));
+    if (txt<=0) { alert("Không thể tính giai thừa của số này")};
+    if (txt>0){
+        let giaithua=1;
+        for (let i=1;i<=txt;i++) {
+            giaithua=giaithua*i;
+        }alert("Giai thừa của "+txt+" = " + giaithua);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Mời nhập vào số lượng số trong dãy Fibonacci muốn in ra : </div>
+<input id="soluong" type="text">
+<input type="button" value="DISPLAY" onclick="displayFibo">
+<p id="invaoday"></p>
+<script>
+
+    let a1=0;
+    let a2=1;
+    let a3=1;
+    let txt= "";
+    document.write(txt);
+    let num=parseInt(document.getElementById("soluong").value);
+    for (let i=2;i<=num ;i++) {
+        a1=a2;
+        a2=a3;
+        a3=a1+a2;
+        document.write(a3+" ");
+    }
+</script>
+</body>
+</html>

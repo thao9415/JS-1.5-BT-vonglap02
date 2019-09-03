@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    txt = parseInt(prompt("Nhập số lượng số thuộc dãy Fibonacci muốn in ra :"));
+    let a1 = 0;
+    let a2=1;
+    let a3 = a1 + a2;
+    document.write(a1 + " " + a2 + " ");
+    for (let i = 3; i <= txt; i++) {
+        a1 = a2;
+        a2 = a3;
+        a3 = a1 + a2;
+        document.write(a3+" ");
+    }
+</script>
+</body>
+</html>
